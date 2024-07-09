@@ -58,7 +58,7 @@ const Home = () => {
                           className="m-5 rounded-[10px]"
                         />
                       </div>
-                      <p className="mx-5 py-5 text-[15px]">{item.title}</p>
+                      <p className="bg-[#F8F7F3] w-[100%] mx-3 py-3 ml-[10px] relative right-[10px]">{item.title}</p>
                     </CardActionArea>
                   </Card>
                 </div>
@@ -74,11 +74,13 @@ const Home = () => {
           {/* Client components */}
           <Clients />
           {/* Brands components */}
+           
           <Brands />
           {/* About company components */}
-          <AboutCompany />
+      
           {/* News components */}
-          <News />
+          <News /> 
+            <AboutCompany />
           {/* Map and questions */}
           <Map />
           {/* Subscribe components */}

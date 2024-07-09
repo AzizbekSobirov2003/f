@@ -6,8 +6,7 @@ function MyApp() {
   const { enqueueSnackbar } = useSnackbar();
 
   const handleClickVariant = (variant: VariantType) => () => {
-    // variant could be success, error, warning, info, or default
-    enqueueSnackbar("successfully added to basket", { variant });
+    enqueueSnackbar("Savatchaga muvaffaqiyatli qo'shildi", { variant });
   };
 
   const data = {
@@ -17,24 +16,25 @@ function MyApp() {
     alt: "data images 4",
     class: "cata4",
   };
-  const clik = () => {
-    localStorage.setItem(`likeData_4`, JSON.stringify(data));
+
+  const addToCart = () => {
+    localStorage.setItem(`cartData_4`, JSON.stringify(data));
+    handleClickVariant("success")();
   };
+
   return (
     <React.Fragment>
       <span
-        onClick={clik}
+        onClick={addToCart}
         className="cursor-pointer rounded-3xl bg-[#088269FF] px-6 py-3 text-white active:scale-95"
       >
-        <button onClick={handleClickVariant("success")}>
-          Добавить в корзину
-        </button>
+        Добавить в корзину
       </span>
     </React.Fragment>
   );
 }
 
-export default function Snic4() {
+export default function CartComponent() {
   return (
     <SnackbarProvider maxSnack={3}>
       <MyApp />

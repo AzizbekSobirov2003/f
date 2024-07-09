@@ -107,10 +107,10 @@ const Main = () => {
                         <Image
                           src={item.img}
                           alt={item.alt}
-                          className="m-5 rounded-[10px]"
+                          className="m-5 rounded-[10px] "
                         />
                       </div>
-                      <p className="mx-5 py-5 text-[15px]">{item.title}</p>
+                      <p className="mx-5 py-5 text-[15px] ">{item.title}</p>
                     </CardActionArea>
                   </Card>
                 </div>

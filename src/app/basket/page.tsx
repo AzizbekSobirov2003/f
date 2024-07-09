@@ -99,10 +99,10 @@ const Basket = () => {
                 </div>
                 <div className="absolute right-5 top-5 flex justify-between">
                   <button>
-                    <Reyt />
+                    {/* <Reyt /> */}
                   </button>
                   <button className="mx-5">
-                    <Like />
+                    {/* <Like /> */}
                   </button>
                   <button
                     onClick={() => removeFromFavorites(item.id)}

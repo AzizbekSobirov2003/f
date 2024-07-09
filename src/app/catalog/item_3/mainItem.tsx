@@ -2,6 +2,7 @@ import Images1 from "@/assets/data/cata3.png";
 import { Like, Reyt } from "@/assets/images";
 import ButtonMy from "@/components/Button";
 import StarItem1 from "@/components/item1/Star";
+import Snic33 from "./Snic33";
 
 import { catalogDataPg } from "@/data/CatalogPgData";
 import Image from "next/image";
@@ -28,7 +29,7 @@ const MainItem = () => {
               <Reyt />
             </button>
             <button className="mx-1">
-              <Like />
+\              <Snic33 />
             </button>
           </div>
         </div>

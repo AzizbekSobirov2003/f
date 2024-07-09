@@ -13,7 +13,7 @@ import {
 import Footer from "@/components/Footer/Footer";
 import Link from "next/link";
 import { Iks, Like, Reyt } from "@/assets/images";
-
+import liked from "@/assets/images/ticker_message_love_feedback_heart_chat_like_icon_258916.png"
 const Basket = () => {
   const [favorites, setFavorites] = useState<UseType[]>([]);
   const [count, setCount] = useState(1);
@@ -79,22 +79,15 @@ const Basket = () => {
                   className="m-3 h-[237px]"
                 />
               </div>
-              <div className="flex w-[0%] justify-between border bg-custom-b">
-                <div className="ml-10 mt-5">
+              <div className=" w-[0%] justify-between border bg-custom-b">
+                <div className="ml-1 mt-5">
                   <h1 className="text-[18px] font-[500]">{item.title}</h1>
                   <p>Артикул: 213134</p>
-                  <p>В наличии</p>
+                  <p> наличии</p>
                 </div>
-                <div className=" m-5 ">
-                  <br />
-                  <div className="flex items-center justify-between rounded-[30px] m-3 border px-5 py-2 text-[#088269]">
-                   
-                   <br /> <button onClick={() => setCount(count - 1)}>-</button>
-                    <h1 className="px-3  ">{count}</h1>
-                    <button onClick={() => setCount(count + 1)}> +</button>
-                  </div>
-                  <br />
-                  <h1 className="text-[18px]   font-[600]">300 000 руб.</h1>{" "}
+                <div className="">
+                 
+                  <h1 className="text-[16px]   font-[600]">300 000 руб.</h1>{" "}
 
                 </div>
                 <div className="absolute right-5 top-5 flex justify-between">
@@ -102,7 +95,7 @@ const Basket = () => {
                     <Reyt />
                   </button>
                   <button className="mx-5">
-                    <Like />
+<img src={liked.src} alt="liked" />
                   </button>
                   <button
                     onClick={() => removeFromFavorites(item.id)}

@@ -6,7 +6,7 @@ import StarItem1 from "@/components/item1/Star";
 import { catalogDataPg } from "@/data/CatalogPgData";
 import Image from "next/image";
 import { useState } from "react";
-import Snic4 from "./Snic";
+import Snic44 from "./Snic44";
 catalogDataPg;
 
 const MainItem = () => {
@@ -30,7 +30,7 @@ const MainItem = () => {
               <Reyt />
             </button>
             <button className="mx-1">
-              <Like />
+              <Snic44 />
             </button>
           </div>
         </div>
@@ -74,7 +74,7 @@ const MainItem = () => {
             <button className="mx-5 rounded-[30px] border px-6 py-3">
               Задать вопрос
             </button>
-            <Snic4 />
+            <Snic44 />
           </div>
           <h1 className="mt-5 text-[16px] font-[500]">О товаре</h1>
           <p className="text-[12px] text-[#202020]">

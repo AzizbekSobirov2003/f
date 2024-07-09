@@ -54,7 +54,7 @@ const Header = () => {
           <ul>
             <li className="hidden text-[#7A7687FF] sm:flex">
               <Link
-                href="company"
+                href="../company"
                 className="mr-3 hover:decoration-slice hover:text-[#07745E] hover:underline"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
@@ -62,17 +62,17 @@ const Header = () => {
                 О компании
               </Link>
 
-              <Link href="dostafka" className="mx-3">
+              <Link href="../dostafka" className="mx-3">
                 Доставка
               </Link>
-              <Link href="oplata" className="mx-3">
+              <Link href="../oplata" className="mx-3">
                 Оплата
               </Link>
-              <Link href="garanti" className="mx-3">
+              <Link href="../garanti" className="mx-3">
                 Гарантии
               </Link>
               <Link
-                href="blog"
+                href="../blog"
                 className="mx-3 hover:decoration-slice hover:text-[#07745E] hover:underline"
                 onMouseEnter={handleMouseEnterBlog}
                 onMouseLeave={handleMouseLeaveBlog}

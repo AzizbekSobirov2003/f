@@ -27,7 +27,7 @@ const HoverShop:React.FC<HoverShopType> = ({
             <Link href="#">Прайс-лист (скачать)</Link>
             <Link href="#">Каталоги оборудования PDF</Link>
             <Link href="#">Оформить претензию</Link>
-            <Link href="#">FAQ</Link>
+            <Link href="../faq">FAQ</Link>
           </li>
         </ul>
       </nav>

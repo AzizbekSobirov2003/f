@@ -3,12 +3,12 @@ import dynamic from "next/dynamic";
 import React, { useEffect, useState } from "react";
 import Header from "@/components/header/HeaderCatalog";
 import Image, { StaticImageData } from "next/image";
-// import ChooseUs from "@/components/ChooseUs";
-// import { ButtonLeft, ButtonRight } from "@/components/RightLeftBtns";
-import Subscribe from "@/components/Subscribe";
-import WithComponent from "@/components/withUs";
-import AboutCompany from "@/components/About/AboutCompany";
-import Document from "@/components/dakument/dakument";
+import loc from "@/assets/images/loc.png";
+import time from "@/assets/images/time.png";
+import call from "@/assets/images/call.png";
+import mail from "@/assets/images/mail.png";
+import sot from "@/assets/images/sot.png";
+import Map from "@/components/map/Map";
 
 import {
   Breadcrumb,
@@ -25,9 +25,7 @@ import Brands from "@/components/Brands/Brands";
 import { Import } from "lucide-react";
 
 // Map komponentini dynamic import qilish
-const Map = dynamic(() => import("@/components/map/Map"), {
-  ssr: false, // Server tomonida render qilinmasligi uchun
-});
+
 
 const Basket = () => {
   const [favorites, setFavorites] = useState<UseType[]>([]);
@@ -89,18 +87,46 @@ const Basket = () => {
 
     
         <h1 className="w-[600px] text-[48px] m-10 relative left-[70px]">Контакты</h1>
-      <div></div>
-<iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4477.9909401976765!2d37.547854!3d55.862745!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537991f01afa9%3A0x53c1f16b1398a554!2z0JTQvNC40YLRgNC-0LLRgdC60L7QtSDRiC4sIDg1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTI3MjM4!5e0!3m2!1sru!2sam!4v1719345687051!5m2!1sru!2sam"
-            width="1310"
-            height="389"
-            className="rounded-[10px]  items-center justify-center m-0 relative left-[110px]"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <button className="text-[14px] relative bottom-[60px] left-[1160px] w-[198px] h-[41px] rounded-3xl  bg-[#088269FF] px-6 py-3 text-white active:scale-95 ">Построить маршрут</button>
+      <div className="w-[650px] h-[652px] bg-white rounded-lg m-20">
+        <p className="text-[30px] font-madium m-4 p-4 ">ООО Глобал Медикал Трейд</p>
+        <p className="flex text-gray-700 text-[16px] ml-4 gap-2"> <img className="w-[11px] h-[15px]" src={loc.src} alt="loc" />Юридический адрес:</p>
+        <p className="ml-8 font-madium ">Россия, г. Москва, ул. Докукина, 8, стр. 2</p>
+        <br />
+        <p className="flex text-gray-700 text-[16px] ml-4 gap-2"> <img className="w-[11px] h-[15px]" src={loc.src} alt="loc" />Фактический адрес:</p>
+        <p className="ml-8 font-madium ">Россия, г. Москва, ул. Докукина, 8, стр. 2</p>
+        <br />
+        <p className="flex text-gray-700 text-[16px] ml-4 gap-2"> <img className="w-[15px] h-[15px]" src={time.src} alt="timevvd" />Режим работы:</p>
+        <p className="ml-8 font-madium  w-[156px]">Россия, г. Москва, ул. Докукина, 8, стр. 2</p>
+        <br />
+        <p className="ml-8 font-semibold">Звоните. Звонки по России бесплатны: </p>
+<br />
+<p className="flex text-gray-700 text-[16px] ml-4 gap-2"> <img className="w-[15px] h-[15px]" src={call.src} alt="call" />Телефоны:</p>
+        <p className="ml-8 font-madium  flex">8-800-000-00-00 .... +7-000-000-00-00 .... +7-495-000-00-00</p>
+        <br />
+        <p className="flex text-gray-700 text-[16px] ml-4 gap-2"> <img className="w-[15px] h-[11px]" src={mail.src} alt="mail" />Пишите: </p>
+        <p className="ml-8 font-madium  flex">info@mail.ru</p>
+        <br />
+        <p className="ml-8 font-madium  flex">Реквизиты: </p>
+        <br />
+        <div className="flex">
+          <div>
+        <p className="flex text-gray-700 text-[16px] ml-8 gap-2">ИНН</p>
+        <p className="ml-8 font-madium  flex">9717039181</p>
+        </div>
+        <div>
+        <p className="flex text-gray-700 text-[16px] ml-8 gap-2">ОГРН</p>
+        <p className="ml-8 font-madium  flex">1167746796986</p>
+        </div>
+        <div className=" items-center justify-center relative left-[50px] bottom-[50px]">
+        <p className="ml-8 font-madium text-[18px] flex ">Мы в соцсетях</p>
+        <br />
+        <img className=" ml-[30px]" src={sot.src} alt="sot" />
 
+        </div>
+</div>
 
+      </div>
+      <Map />
 
       <footer>
         <Footer />

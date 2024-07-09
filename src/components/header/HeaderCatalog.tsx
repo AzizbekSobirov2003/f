@@ -11,8 +11,6 @@ import { useState } from "react";
 import CatalogHover from "./CatalogHover";
 import HoverManufacturers from "./HoverManufacturers";
 import HoverShop from "./HoverShop";
-import usluga from "@/app/usluga/page"
-import kabinet from "@/app/kabinet/page";
 
 const HeaderCatalog = () => {
   const [isHoverCatalog, setisHoverCatalog] = useState(false);
@@ -77,16 +75,16 @@ const HeaderCatalog = () => {
               </Link>
               <Link
                 className="mx-3 text-[14px] hover:text-[#07745E]"
-                href="#"
+                href="../prois"
                 onMouseEnter={handleMouseEnterManufacturers}
                 onMouseLeave={handleMouseLeaveManufacturers}
               >
                 Производители
               </Link>
-              <Link className="mx-3 text-[14px] hover:text-[#07745E]" href="kabinet">
+              <Link className="mx-3 text-[14px] hover:text-[#07745E]" href="../kabinet">
                 Кабинеты под ключ
               </Link>
-              <Link className="mx-3 text-[14px] hover:text-[#07745E]" href="usluga">
+              <Link className="mx-3 text-[14px] hover:text-[#07745E]" href="../usluga">
                 Услуги
               </Link>
               <Link className="mx-3 text-[14px] hover:text-[#07745E]" href="#">
@@ -100,7 +98,7 @@ const HeaderCatalog = () => {
               >
                 Покупателям
               </Link>
-              <Link className="mx-3 text-[14px] hover:text-[#07745E]" href="">
+              <Link className="mx-3 text-[14px] hover:text-[#07745E]" href="../kontakt">
                 Контакты
               </Link>
             </li>
